@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Startpage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <noscript>
-        <style>
-            #clock {
-                display: none;
-            }
-        </style>
+      <style>
+        #clock {
+          display: none;
+        }
+      </style>
     </noscript>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div id="top-div">
-            <div id="clock-div">
-                <h1 id="clock">
-                    00/00/0000
-                    00:00:00
-                </h1>
-            </div>
+      <div id="top-div">
+        <div id="clock-div">
+          <h1 id="clock">
+            00/00/0000 00:00:00
+          </h1>
+        </div>
 
-            <form id="search-form" action="https://duckduckgo.com">
-                <div id="search-bar-wrapper">
-                    <input id="search-bar" name="q" type="text" title="Search" />
-                    <button id="search-bar-btn" type="submit">&#128270;</button>
-                </div>
-            </form>
-        </div>
-        <div id="links-container">
-            <section class="link-section">
-                <h2 class="link-section-title red">Category 1</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
-                </ul>
-            </section>
-            <section class="link-section">
-                <h2 class="link-section-title blue">Category 2</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
-                </ul>
-            </section>
-            <section class="link-section">
-                <h2 class="link-section-title green">Category 3</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
-                </ul>
-            </section>
-            <section class="link-section">
-                <h2 class="link-section-title purple">Category 4</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
-                </ul>
-            </section>
-        </div>
+        <form id="search-form" action="https://duckduckgo.com">
+          <div id="search-bar-wrapper">
+            <input id="search-bar" name="q" type="text" title="Search" />
+            <button id="search-bar-btn" type="submit">&#128270;</button>
+          </div>
+        </form>
+      </div>
+      <div id="links-container">
+        <section class="link-section">
+          <h2 class="link-section-title purple">Most Used</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="https://127.0.0.1:8384/">Syncthing</a>
+            </li>
+            <li class="link-list-item">
+              <a class="link" href="https://github.com/">Github</a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title red">Urgent</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title blue">Read</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title green">Watch</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title purple">Universitá</h2>
+          <hr />
+          <h3 class="link-section-title purple">Tesi</h3>
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a
+                class="link"
+                href="https://centre.santafe.edu/thermocomp/Santa_Fe_Institute_Collaboration_Platform:Thermodynamics_of_Computation_Wiki"
+                >Thermodynamics of Computation</a
+              >
+            </li>
+            <li class="link-list-item">
+              <a class="link" href="https://en.wikipedia.org/wiki/Rolf_Landauer"
+                >Rolf Landauer</a
+              >
+            </li>
+            <li class="link-list-item">
+              <a
+                class="link"
+                href="https://en.wikipedia.org/wiki/Landauer%27s_principle"
+                >Landauer's principle</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title red">Linux</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title blue">Projects</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title green">Utility</h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a class="link" href="<++>"><++></a>
+            </li>
+          </ul>
+        </section>
+        <section class="link-section">
+          <h2 class="link-section-title white">
+            Archive
+          </h2>
+          <hr />
+          <ul class="link-list">
+            <li class="link-list-item">
+              <a
+                class="link"
+                href="https://askubuntu.com/questions/471802/make-the-zoom-slider-of-microsoft-natural-ergonomic-keyboard-4000-and-7000-scrol"
+                >Change slider function</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- # Template -->
+        <!-- <section class="link-section"> -->
+        <!-- <h2 class="link-section-title red"><++></h2> -->
+        <!-- <hr /> -->
+        <!-- <ul class="link-list"> -->
+        <!-- <li class="link-list-item"> -->
+        <!-- <a class="link" href="<++>"><++></a> -->
+        <!-- </li> -->
+        <!-- </ul> -->
+        <!-- </section> -->
+        <!-- # End Template -->
+      </div>
     </main>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -136,53 +136,53 @@ main {
   padding: 0 5vw 0 5vw;
 }
 
-#search-form,
-#clock-div {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
+/* #search-form, */
+/* #clock-div { */
+/*   align-items: center; */
+/*   display: flex; */
+/*   justify-content: center; */
+/* } */
 
-#search-bar-wrapper {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
+/* #search-bar-wrapper { */
+/*   display: inline-block; */
+/*   position: relative; */
+/*   width: 100%; */
+/* } */
 
-#search-bar,
-#search-bar-btn {
-  background-color: #353535;
-  border-color: #353535;
-  border-style: solid;
-  border-width: 1px;
-}
+/* #search-bar, */
+/* #search-bar-btn { */
+/*   background-color: #353535; */
+/*   border-color: #353535; */
+/*   border-style: solid; */
+/*   border-width: 1px; */
+/* } */
 
-#search-bar {
-  box-shadow: 0px 0px 15px 2px #111;
-  box-sizing: border-box;
-  color: #ddd;
-  font-size: 16px;
-  height: 25px;
-  padding: 0 25px 0 0;
-  text-align: center;
-  width: 100%;
-}
+/* #search-bar { */
+/*   box-shadow: 0px 0px 15px 2px #111; */
+/*   box-sizing: border-box; */
+/*   color: #ddd; */
+/*   font-size: 16px; */
+/*   height: 25px; */
+/*   padding: 0 25px 0 0; */
+/*   text-align: center; */
+/*   width: 100%; */
+/* } */
 
-#search-bar-btn {
-  display: inline-block;
-  font-size: 16px;
-  height: 25px;
-  padding: 0 0 0 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 25px;
-}
+/* #search-bar-btn { */
+/*   display: inline-block; */
+/*   font-size: 16px; */
+/*   height: 25px; */
+/*   padding: 0 0 0 0; */
+/*   position: absolute; */
+/*   right: 0; */
+/*   top: 0; */
+/*   width: 25px; */
+/* } */
 
-#search-bar:focus,
-#search-bar:focus + #search-bar-btn {
-  border-color: #888;
-}
+/* #search-bar:focus, */
+/* #search-bar:focus + #search-bar-btn { */
+/*   border-color: #888; */
+/* } */
 
 #links-container {
   column-gap: 0vw;
@@ -208,14 +208,14 @@ main {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   #links-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 2000px) {
   #top-div {
     padding: 0 15vw 0 15vw;
   }

@@ -43,7 +43,7 @@ function getDateTime() {
     ":" +
     (seconds < 10 ? "0" + seconds : seconds);
 
-  return date + "\n" + time;
+  return time + " --- " + date;
 }
 
 function setClock() {

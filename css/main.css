@@ -121,6 +121,18 @@ main {
   color: #9348ff;
 }
 
+.yellow {
+  color: #d4ac0d;
+}
+
+.orange {
+  color: #d35400;
+}
+
+.gray {
+  color: #7b7d7d;
+}
+
 /* IDs */
 #clock {
   font-family: Roboto;

@@ -19,15 +19,15 @@
       <div id="top-div">
         <div id="clock-div">
           <h1 id="clock">00/00/0000 00:00:00</h1>
-          <!-- </div> -->
-          <!-- <form id="search-form" action="https://duckduckgo.com"> -->
-          <!--   <div id="search-bar-wrapper"> -->
-          <!--     <input id="search-bar" name="q" type="text" title="Search" /> -->
-          <!--     <button id="search-bar-btn" type="submit">&#128270;</button> -->
-          <!--   </div> -->
-          <!-- </form> -->
-          <!-- </div> -->
-          <div id="links-container">
+        </div>
+        <form id="search-form" action="https://searx.be">
+          <div id="search-bar-wrapper">
+            <input id="search-bar" name="q" type="text" title="Search" />
+            <!-- <button id="search-bar-btn" type="submit">&#128270;</button> -->
+          </div>
+        </form>
+      </div>
+      <div id="links-container">
             <!-- --------------------------------------------------------------------------------------- -->
             <section class="link-section">
               <h2 class="link-section-title purple">Local host</h2>
@@ -46,6 +46,9 @@
                 </li>
                 <li class="link-list-item">
                   <a class="link" href="http://192.168.1.1">Router</a>
+                </li>
+                <li class="link-list-item">
+                  <a class="link" href="http://localhost:631/jobs/">CUPS</a>
                 </li>
               </ul>
             </section>
@@ -80,6 +83,11 @@
                   >
                 </li>
                 <li class="link-list-item">
+                  <a class="link" href="http://localhost:6767/"
+                    >Bazarr | Subtitles</a
+                  >
+                </li>
+                <li class="link-list-item">
                   <a class="link" href="https://wiki.servarr.com/"
                     >Servarr | Servarr Wiki</a
                   >
@@ -97,60 +105,52 @@
                 <li class="link-list-item">
                   <a class="link" href="https://github.com/DavideRagaini">DR</a>
                 </li>
-                <li class="link-list-item">
-                  <a
-                    class="link"
-                    href="https://github.com/hlissner/doom-emacs/blob/develop/docs/index.org#module-appendix"
-                  >
-                    Doom Emacs docs</a
-                  >
-                </li>
               </ul>
             </section>
             <!-- --------------------------------------------------------------------------------------- -->
-            <section class="link-section">
-              <h2 class="link-section-title gray">Universitá</h2>
-              <hr />
-              <ul class="link-list">
-                <li class="link-list-item">
-                  <a class="link" href="https://univpm.esse3.cineca.it/Home.do">
-                    ess3web</a
-                  >
-                </li>
-                <li class="link-list-item">
-                  <a
-                    class="link"
-                    href="https://outlook.office365.com/owa/?realm=studenti.univpm.it"
-                  >
-                    email</a
-                  >
-                </li>
-                <li class="link-list-item">
-                  <a
-                    class="link"
-                    href="https://learn.univpm.it/course/index.php?categoryid=180"
-                  >
-                    19-20</a
-                  >
-                </li>
-                <li class="link-list-item">
-                  <a
-                    class="link"
-                    href="https://learn.univpm.it/course/index.php?categoryid=304"
-                  >
-                    20-21</a
-                  >
-                </li>
-                <li class="link-list-item">
-                  <a
-                    class="link"
-                    href="https://learn.univpm.it/course/index.php?categoryid=405"
-                  >
-                    21-22</a
-                  >
-                </li>
-              </ul>
-            </section>
+            <!-- <section class="link-section">
+                 <h2 class="link-section-title gray">Universitá</h2>
+                 <hr />
+                 <ul class="link-list">
+                 <li class="link-list-item">
+                 <a class="link" href="https://univpm.esse3.cineca.it/Home.do">
+                 ess3web</a
+                 >
+                 </li>
+                 <li class="link-list-item">
+                 <a
+                 class="link"
+                 href="https://outlook.office365.com/owa/?realm=studenti.univpm.it"
+                 >
+                 email</a
+                 >
+                 </li>
+                 <li class="link-list-item">
+                 <a
+                 class="link"
+                 href="https://learn.univpm.it/course/index.php?categoryid=180"
+                 >
+                 19-20</a
+                 >
+                 </li>
+                 <li class="link-list-item">
+                 <a
+                 class="link"
+                 href="https://learn.univpm.it/course/index.php?categoryid=304"
+                 >
+                 20-21</a
+                 >
+                 </li>
+                 <li class="link-list-item">
+                 <a
+                 class="link"
+                 href="https://learn.univpm.it/course/index.php?categoryid=405"
+                 >
+                 21-22</a
+                 >
+                 </li>
+                 </ul>
+                 </section> -->
             <!-- --------------------------------------------------------------------------------------- -->
             <section class="link-section">
               <h2 class="link-section-title red">Nix</h2>
@@ -199,6 +199,14 @@
             <section class="link-section">
               <h2 class="link-section-title blue">Docs</h2>
               <hr />
+              <li class="link-list-item">
+                <a
+                  class="link"
+                  href="https://github.com/doomemacs/doomemacs/blob/master/docs/index.org"
+                >
+                  Doom Emacs docs</a
+                >
+              </li>
               <ul class="link-list">
                 <li class="link-list-item">
                   <a class="link" href="https://docs.qtile.org/en/latest/"
@@ -208,6 +216,40 @@
                 <li class="link-list-item">
                   <a class="link" href="https://github.com/swaywm/sway/wiki"
                     >Sway</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <!-- --------------------------------------------------------------------------------------- -->
+            <section class="link-section">
+              <h2 class="link-section-title orange">mpv</h2>
+              <hr />
+              <li class="link-list-item">
+                <a
+                  class="link"
+                  href="https://nudin.github.io/mpv-script-directory/"
+                >
+                  user scripts</a
+                >
+              </li>
+              <ul class="link-list">
+                <li class="link-list-item">
+                  <a
+                    class="link"
+                    href="https://github.com/mpv-player/mpv/wiki/User-Scripts"
+                    >github/mpv/wiki/User-Scripts</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    class="link"
+                    href="https://github.com/mpv-player/mpv/tree/master/DOCS/man"
+                    >mpv docs rst</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a class="link" href="https://github.com/stax76/awesome-mpv"
+                    >github/stax76/awesome-mpv</a
                   >
                 </li>
               </ul>

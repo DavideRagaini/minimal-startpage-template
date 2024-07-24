@@ -6,14 +6,14 @@ const clockInterval = 1000;
 /**
  * Search engine query url
  */
-// const searchEngineUrl = 'https://duckduckgo.com/?q=';
+const searchEngineUrl = 'https://searx.be/search?q=';
 
 const tabKeyCode = 9;
 const enterKeyCode = 13;
 const escapeKeyCode = 27;
-// const searchBarElement = document.getElementById('search-bar');
+const searchBarElement = document.getElementById('search-bar');
 const clockElement = document.getElementById("clock");
-// const formElement = document.getElementById('search-form');
+const formElement = document.getElementById('search-form');
 
 /**
  * Return a string containing the formatted current date and time.
@@ -50,18 +50,18 @@ function setClock() {
   clockElement.innerText = getDateTime();
 }
 
-// function search() {
-//     let value = searchBarElement.value;
-//     if (!value) {
-//         return;
-//     }
+function search() {
+    let value = searchBarElement.value;
+    if (!value) {
+        return;
+    }
 
-//     if (value.startsWith('https://') || value.startsWith('http://')) {
-//         window.location = value;
-//     } else {
-//         window.location = searchEngineUrl + encodeURIComponent(value);
-//     }
-// }
+    if (value.startsWith('https://') || value.startsWith('http://')) {
+        window.location = value;
+    } else {
+        window.location = searchEngineUrl + encodeURIComponent(value);
+    }
+}
 
 setClock();
 
@@ -69,19 +69,19 @@ setInterval(() => {
   setClock();
 }, clockInterval);
 
-// searchBarElement.focus();
-// searchBarElement.value = "";
+searchBarElement.focus();
+searchBarElement.value = "";
 
-// formElement.addEventListener("submit", (ev) => {
-//   ev.preventDefault();
-//   search();
-// });
+formElement.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  search();
+});
 
-// document.addEventListener("keypress", (event) => {
-//   if (event.keyCode == escapeKeyCode) {
-//     searchBarElement.blur();
-//     searchBarElement.value = "";
-//   } else if (event.keyCode != tabKeyCode && event.keyCode != enterKeyCode) {
-//     searchBarElement.focus();
-//   }
-// });
+document.addEventListener("keypress", (event) => {
+  if (event.keyCode == escapeKeyCode) {
+    searchBarElement.blur();
+    searchBarElement.value = "";
+  } else if (event.keyCode != tabKeyCode && event.keyCode != enterKeyCode) {
+    searchBarElement.focus();
+  }
+});
